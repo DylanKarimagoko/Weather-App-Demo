@@ -1,0 +1,188 @@
+body {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/testinglab-e427b.appspot.com/o/background-img.jpg?alt=media&token=de409afd-7063-418f-a71b-63d233d4f7fb");
+    background-color: #CFDCE4;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;   
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.displayTime {
+    display: flex;
+    flex-direction: column;
+    place-items: left;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0; 
+    
+}
+
+#loading {
+    display: none;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.locationPin{
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/testinglab-e427b.appspot.com/o/location.png?alt=media&token=f0247ab9-c532-4cc0-a42f-8fe9e25705ec");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 80px;
+ 
+}
+.selection{
+    width: 60%;
+   
+}
+.selectCity {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 3px;
+   
+overflow: hidden;
+padding: 3px;
+width: 50%;
+height: 100px;
+position: absolute;
+left: 0;
+right: 0;
+margin-left: auto; 
+margin-right: auto;
+background-color: #CFDCE4;
+display: flex;
+place-content: center;
+place-items: center;
+font-family: 'Roboto', sans-serif;
+font-weight: 900;
+font-size: 30px;
+color: white;
+}
+
+select {
+    place-items: center;
+    background:none;
+    border: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    padding: 0 4em 0 1em;
+    color: white;
+    cursor: pointer;
+
+  }
+  select option {
+  cursor: pointer;
+    background-color: #CFDCE4;
+  }
+
+#dayNth{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+.nthValue{
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.weatherCardDay {
+    display: flex;
+    gap: 2px;
+}
+
+
+#dayDisplay{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+#timeDisplay{
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.dayContainer {
+    display: flex;
+    gap: 2px;
+}
+.weatherContainer {
+
+    overflow: auto;
+    width: 98%;
+    height: 320px;
+    position: absolute;
+    bottom: 15px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    gap: 1px;
+    
+}
+
+.weatherCard{
+    width: 170px;
+    height: 240px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+.weatherCardDetails {
+    margin-top: 10px;
+    display: flex;
+    gap: 3px;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+}
+
+.weatherCardExp {
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    border: 0px;
+    width: 33%;
+    height: 100%;
+}
+
+.weatherCard img {
+    width: 50%;
+}
+
+html{
+    height: 100%;
+}
+
+
