@@ -1,7 +1,7 @@
 
 function fetchWeather (){
   document.querySelector("#loading").style.display = 'flex';
-  const url = "http://www.7timer.info/bin/api.pl?";
+  const url = "https://www.7timer.info/bin/api.pl?";
   var value = document.getElementById("citySelected").value;
  fetch(url + value + "&product=civillight&output=json").then(
     response => response.json()
