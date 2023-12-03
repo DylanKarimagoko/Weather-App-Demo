@@ -19,7 +19,10 @@ function fetchWeather (){
     var month = monthsArray[parseInt(mt) - 1];
 items += ` <div class="weatherCard">
 <div class="weatherCardDay"><p class="weatherCardDate">${month + " " + dt}</p> <p class="nthValue">${nthValue}</p> </div>
+<div class="weatherConditions">
 <img src="./images/${arr[i].weather}.png" alt="icon"/>
+<p>${arr[i].weather}</p>
+</div>
 <div class="weatherCardDetails">
     <div class="weatherCardExp">
         <p>High</p>
